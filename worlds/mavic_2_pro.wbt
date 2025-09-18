@@ -1,0 +1,376 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "webots://projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "webots://projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "webots://projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "webots://projects/appearances/protos/SandyGround.proto"
+EXTERNPROTO "webots://projects/objects/road/protos/Road.proto"
+EXTERNPROTO "webots://projects/appearances/protos/Pavement.proto"
+EXTERNPROTO "webots://projects/objects/buildings/protos/Windmill.proto"
+EXTERNPROTO "webots://projects/objects/buildings/protos/SmallManor.proto"
+EXTERNPROTO "webots://projects/objects/factory/manhole/protos/SquareManhole.proto"
+EXTERNPROTO "webots://projects/vehicles/protos/tesla/TeslaModel3Simple.proto"
+EXTERNPROTO "webots://projects/objects/trees/protos/Pine.proto"
+EXTERNPROTO "webots://projects/objects/trees/protos/Forest.proto"
+EXTERNPROTO "webots://projects/robots/dji/mavic/protos/Mavic2Pro.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/drinks/protos/Can.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/drinks/protos/WaterBottle.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/drinks/protos/BeerBottle.proto"
+
+WorldInfo {
+  info [
+    "This demonstration shows a DJI Mavic 2 PRO flying over a rural area."
+    "After the drone has taken off, you can control it with the keyboard of your computer."
+  ]
+  title "DJI Mavic 2 PRO demo"
+  basicTimeStep 8
+  defaultDamping Damping {
+    linear 0.5
+    angular 0.5
+  }
+}
+Viewpoint {
+  orientation 0.0023718369423843316 -0.0011302973932194593 -0.9999965484027041 3.5319995178079546
+  position -11.708733778721653 -4.294745971230188 1.0302959961459919
+  near 0.2
+  follow "Mavic 2 PRO"
+  followSmoothness 0.2
+}
+TexturedBackground {
+  luminosity 3
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 400 400
+  tileSize 6 6
+  appearance SandyGround {
+  }
+}
+Can {
+  translation 8.91713645229867e-07 -0.1599814949382002 0.08109288513342544
+  rotation -0.9988146484063011 0.04867540196086113 -5.807706875467215e-05 0.00029989316568080943
+  name "can(1)"
+}
+Can {
+  translation 5.221324165714408e-16 -0.4899671268274064 0.08107481646075416
+  rotation 1 3.0253519222306937e-15 -7.43901713455549e-13 0.00061859931642333
+  name "can(2)"
+}
+Can {
+  translation 0.2899999999995434 -0.4600000005578544 0.08108283250000003
+  rotation 0.9999999996968203 2.4584650922866084e-05 -1.3980030343167605e-06 9.13280888536351e-09
+  name "can(3)"
+}
+Can {
+  translation 0.6 -0.16 0.06106566500000001
+  rotation 0.008024249225879859 -0.0004655255842976809 -0.9999676968333984 8.497614352649226e-16
+  name "can(4)"
+}
+Can {
+  translation 0.036779291276759156 0.6266482015060025 0.03166578448310537
+  rotation 0.745901402787247 0.4605465846645969 -0.48117350371128315 1.8766906403019
+  name "can(5)"
+}
+Can {
+  translation -0.2299823621103428 -0.11000037904381477 0.0810927353475408
+  rotation 0.02180345065389749 0.9997622762160903 -2.43886205724041e-05 0.0002849289656196444
+  name "can(6)"
+}
+BeerBottle {
+  hidden linearVelocity_0 0.00014122921249137084 -7.569358131519872e-05 0.0037829675602990597
+  hidden angularVelocity_0 -0.0024271762780672633 -0.06318297386081081 -0.0012281841755100943
+  translation -0.03220905587662397 -0.038091993606711186 0.06206217174055221
+  rotation 0.1830169057197467 -0.9511965978209908 -0.2484549144503721 1.6367838882797627
+}
+BeerBottle {
+  translation 0.006081916134232215 0.5145121248262225 0.047204623589128296
+  rotation 0.7681404084094953 0.3523625135411984 -0.534603565288731 -2.1590220323247475
+  name "beer bottle(1)"
+}
+BeerBottle {
+  translation -1.37 -1.3244849804649066e-18 0.00046076000000003225
+  rotation -0.8451001858486461 -0.534036527666227 0.024711596402958978 1.086716310587433e-17
+  name "beer bottle(2)"
+}
+BeerBottle {
+  translation -1.37 1.3 0.00046076000000003225
+  rotation -0.003519829206367627 0.6719145677844773 -0.7406202970492753 2.4921301809089466e-17
+  name "beer bottle(3)"
+}
+BeerBottle {
+  translation -1.37 -0.48 0.00046076000000003225
+  rotation 0.7981695188018664 -0.04954976249937083 0.6003917390269896 2.050307320013796e-17
+  name "beer bottle(4)"
+}
+BeerBottle {
+  translation -1.37 2.05 0.00046076000000003225
+  rotation 0.8323085789796141 0.1790817758262191 -0.52458759699774 1.70661684338347e-17
+  name "beer bottle(5)"
+}
+BeerBottle {
+  translation -1.03 0.09 0.00046076000000003225
+  rotation -0.4642926868914559 -0.6933908099985364 0.5510367369864607 1.3646987217641103e-17
+  name "beer bottle(6)"
+}
+WaterBottle {
+  hidden linearVelocity_0 6.719904638099683e-05 1.4728859434759677e-05 -0.00016366895362604343
+  hidden angularVelocity_0 -0.001884962590755614 0.0016406459367363795 0.00047590603153676117
+  translation -0.05099397421528995 -0.03678553611845642 0.06373565936448333
+  rotation 0.20015216959323137 -0.9432442078334745 -0.26500844023487913 1.6465010448858965
+}
+WaterBottle {
+  translation -2.5943076032531753e-18 0.09999999999999985 0.01795095000000005
+  rotation -0.982996224374542 -0.18204331057185152 0.024055268475646374 1.3150106427664748e-15
+  name "water bottle(1)"
+}
+WaterBottle {
+  translation -3.741850866098671e-18 0.3099999999999999 0.01795095000000005
+  rotation -0.9842043002923966 -0.176966493696659 0.004975479340151248 1.3232092896033915e-15
+  name "water bottle(2)"
+}
+WaterBottle {
+  translation -0.6723676216403361 0.9362477965754896 0.04384324638249433
+  rotation 0.1894112470025402 -0.6885603156159591 0.7000057651675405 2.8630216748353994
+  name "water bottle(3)"
+}
+WaterBottle {
+  translation -9.512981859434692e-18 -1.32 -0.002098099999999936
+  rotation -0.9208556315985295 -0.34586364142714804 -0.18000902002962674 3.150073692059485e-16
+  name "water bottle(4)"
+}
+WaterBottle {
+  translation -1.971472614049853e-18 -0.3500000000000001 0.01795095000000005
+  rotation -0.9256800728293283 -0.3782858587282371 0.004026394532284858 1.0485908900308545e-15
+  name "water bottle(5)"
+}
+WaterBottle {
+  translation 0.6535964563047205 0.00034672683816476627 0.04329889075055833
+  rotation -0.006950693763146482 -0.9999432760238637 0.00807047649610936 1.4354558326488052
+  name "water bottle(6)"
+}
+WaterBottle {
+  translation -5.985022693131145e-18 1.25 -0.002098099999999936
+  rotation -0.9247012522693611 -0.34942728981360643 -0.15108991754909853 3.21172205750448e-16
+  name "water bottle(7)"
+}
+WaterBottle {
+  translation -6.4282462938078885e-18 1.6 -0.002098099999999936
+  rotation -0.9325102292825306 -0.33812808481647627 -0.12686240791418044 3.170803174969477e-16
+  name "water bottle(8)"
+}
+WaterBottle {
+  translation 0.6399986390626935 0.2700014163996378 -0.002098099999999936
+  rotation 3.9910075366222064e-14 -3.8470539559546963e-13 -1 3.721385328288346e-05
+  name "water bottle(9)"
+}
+WaterBottle {
+  translation 1.73 0.27 -0.002098099999999936
+  rotation -0.9356655390426484 -0.2927136878241091 0.19710072554011646 3.175270756606566e-16
+  name "water bottle(13)"
+}
+WaterBottle {
+  translation 0.64 8.5 -0.002098099999999936
+  rotation -0.9472923590979272 -0.317668714657285 -0.041518358862942216 3.078074133196252e-16
+  name "water bottle(14)"
+}
+WaterBottle {
+  translation 0.64 -4.79 -0.002098099999999936
+  rotation -0.8945462969405749 -0.3436950138762804 -0.2857632937703658 3.2676638400347357e-16
+  name "water bottle(15)"
+}
+WaterBottle {
+  translation 0.64 -2.71 -0.002098099999999936
+  rotation -0.9555858956676433 -0.28164634859615145 0.08678093294913879 3.089206913975424e-16
+  name "water bottle(16)"
+}
+WaterBottle {
+  translation 8.09 0.27 -0.002098099999999936
+  rotation -0.958131573611273 -0.2834482029761461 -0.04050930607624899 3.135558605716583e-16
+  name "water bottle(17)"
+}
+WaterBottle {
+  translation 8.31 0.27 -0.002098099999999936
+  rotation -0.958131573611273 -0.2834482029761461 -0.04050930607624899 3.135558605716583e-16
+  name "water bottle(18)"
+}
+WaterBottle {
+  translation 9.77 0.27 -0.002098099999999936
+  rotation -0.958131573611273 -0.2834482029761461 -0.04050930607624899 3.135558605716583e-16
+  name "water bottle(19)"
+}
+WaterBottle {
+  translation 11.5 0.27 -0.002098099999999936
+  rotation -0.958131573611273 -0.2834482029761461 -0.04050930607624899 3.135558605716583e-16
+  name "water bottle(20)"
+}
+WaterBottle {
+  translation 0.64 17.45 -0.002098099999999936
+  rotation -0.9472923590979272 -0.317668714657285 -0.041518358862942216 3.078074133196252e-16
+  name "water bottle(21)"
+}
+WaterBottle {
+  translation 8.47 3.5 -0.002098099999999936
+  rotation -0.9486110207799686 -0.30380089415249445 0.08855590306089625 3.1035842832944604e-16
+  name "water bottle(22)"
+}
+WaterBottle {
+  translation -6.7 3.39 -0.002098099999999936
+  rotation -0.9114783411402119 -0.2789608568308955 0.3023046046431647 3.354869546879395e-16
+  name "water bottle(23)"
+}
+WaterBottle {
+  translation -0.61 -2.7020178701684622e-18 -0.002098099999999936
+  rotation -0.9269507145223052 -0.27062555802554805 0.25985415176584925 3.440889335714799e-16
+  name "water bottle(10)"
+}
+WaterBottle {
+  translation -1.16 0.58 -0.002098099999999936
+  rotation -0.9555858956676433 -0.28164634859615145 0.08678093294913879 3.089206913975424e-16
+  name "water bottle(11)"
+}
+WaterBottle {
+  translation -0.10200155274890732 0.8319035778063388 0.04322496447106605
+  rotation 0.38127583331403814 -0.5615946916059991 0.7343297224616805 2.722550782805157
+  name "water bottle(12)"
+}
+Can {
+  translation 1.162174108053821e-10 1.140002436025309 0.06106566500000001
+  rotation 3.2566449783538345e-10 -8.469812872423066e-10 0.9999999999999999 1.014460522275254e-08
+}
+Road {
+  translation -43.8 9.2 0.01
+  rotation 0 0 1 -0.3926996938995747
+  width 3
+  numberOfLanes 1
+  rightBorder FALSE
+  leftBorder FALSE
+  wayPoints [
+    0 0 0
+    100 0 0
+    200 200 0
+  ]
+  splineSubdivision 8
+  appearance Pavement {
+    type "black stone"
+  }
+}
+Windmill {
+  translation -43.8656 -19.8433 0
+  rotation -7.19228e-09 2.6842e-08 1 0.523601
+}
+Windmill {
+  translation -44.258 -27.3356 0
+  rotation -7.19228e-09 2.6842e-08 1 0.523601
+  name "windmill(1)"
+}
+Windmill {
+  translation -46.2448 30.573 0
+  rotation -7.19228e-09 2.6842e-08 1 0.523601
+  name "windmill(2)"
+}
+Windmill {
+  translation -38.75 23.4 0
+  name "windmill(3)"
+}
+SmallManor {
+  translation -50.35 11.25 0
+  rotation 0 0 -1 0.392394
+}
+SquareManhole {
+  translation 0 0 -0.03
+}
+TeslaModel3Simple {
+  translation -41.5139 4.34169 0.31
+  rotation 0 0 1 -0.2618053071795865
+}
+TeslaModel3Simple {
+  translation -38.6366 14.7062 0.41
+  rotation 0 0 1 -0.2618053071795865
+  color 1 1 1
+  name "vehicle(1)"
+}
+TeslaModel3Simple {
+  translation -37.8734 17.1794 0.51
+  rotation 0 0 1 -0.2618053071795865
+  color 1 1 0
+  name "vehicle(2)"
+}
+Pine {
+  translation -14.0083 -14.4828 0
+  rotation 0 0 1 2.61799
+}
+Pine {
+  translation -19.6195 -24.3783 0
+  rotation 0 0 1 2.87979
+  name "pine tree(1)"
+}
+Pine {
+  translation -22.0129 6.20205 0
+  name "pine tree(3)"
+}
+Pine {
+  translation -10.6926 -25.1339 0
+  name "pine tree(4)"
+}
+Pine {
+  translation -14.3441 14.5621 0
+  name "pine tree(5)"
+}
+Pine {
+  translation -26.6328 -7.1707 0
+  name "pine tree(6)"
+}
+Pine {
+  translation -9.37029 14.0209 0
+  rotation 0 0 1 -2.6179953071795863
+  name "pine tree(2)"
+}
+Forest {
+  translation 0 0 -0.01
+  shape [
+    200 200
+    200 0
+    50 0
+    50 50
+    -50 50
+    -50 -50
+    50 -50
+    50 0
+    200 0
+    200 -200
+    -200 -200
+    -200 200
+  ]
+  density 0.01
+  type "cherry tree"
+  randomSeed 1
+  maxHeight 12
+  minHeight 6
+  maxRadius 6
+  minRadius 3
+}
+Mavic2Pro {
+  hidden position_0_0 2.451151049546797e-09
+  hidden linearVelocity_0 0.04888049842132952 -0.053953333544565184 -0.0024235316425405447
+  hidden angularVelocity_0 4.3769474019738646e-07 3.608980850134579e-07 -0.00017278593344611137
+  hidden position_5_0 -2.632561075016919e-08
+  hidden linearVelocity_5 0.04886723962920608 -0.05397083711904116 -0.002423601874820443
+  hidden angularVelocity_5 4.3769446579733154e-07 3.60898166355967e-07 -0.00017278593017317395
+  hidden rotation_6 0 -0.9999999999999999 0 2.9802322387695313e-08
+  hidden position_6_0 -1.3105682496552563e-07
+  hidden linearVelocity_6 0.04886821134937695 -0.053971092618160584 -0.0024236001860494343
+  hidden angularVelocity_6 3.969245540580587e-07 2.9969276068359864e-07 -0.0001727860237748227
+  hidden rotation_7 -1 0 0 1.2990531157078367e-07
+  hidden linearVelocity_7 0.04886931955793982 -0.05397200256799566 -0.002423599247369991
+  hidden angularVelocity_7 5.043533566593533e-07 2.2813479239439052e-07 -0.00017278666853318033
+  translation -20.238059179259075 -0.7629490335758813 1.0032704207634717
+  rotation 0.004600773469289698 0.007618014401612411 -0.9999603985858945 0.5876316130099836
+  cameraSlot [
+    Camera {
+      width 400
+      height 240
+      near 0.2
+    }
+  ]
+}
