@@ -10,7 +10,7 @@ This project demonstrates an **autonomous drone simulation** for trash detection
 - Outputs detection results with **bounding boxes, confidence, and GPS location**.
 
 ## Simulation demo
-[![Watch the demo](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+[Click here to watch the demo](media/demo.mp4)
 
 ## Key Features
 - **Webots Simulation** for realistic drone and environment.
