@@ -25,10 +25,10 @@ This project demonstrates an **autonomous drone simulation** for trash detection
    cd trash-detection
 2. (Optional) Create a virtual environment to keep dependencies isolated:
   python -m venv venv
-  # Activate the virtual environment
-  # Windows:
+    Activate the virtual environment
+    Windows:
   venv\Scripts\activate
-  # macOS/Linux:
+     macOS/Linux:
   source venv/bin/activate
 3.  Install dependencies:
   pip install torch torchvision torchaudio opencv-python pandas ultralytics
